@@ -188,10 +188,12 @@ font-weight: bold;
 }
 
 .footer{
-    width: 620px;
+    
+     text-align: center;
     background-color: rgba(255, 144, 14 , 0.1);
     font-size: 1.25rem;
     padding: 30px 140px;
+    color: rgb(66, 66, 66);
   
 }
 
@@ -243,6 +245,9 @@ font-weight: bold;
      {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
+    }
+    .facts-items {
+        row-gap: 24px;
     }
     #experience-badge{
         margin-top: 20px;
