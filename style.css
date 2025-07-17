@@ -89,7 +89,7 @@ font-weight: bold;
 
 }
 
-.team-description p{
+.team-description p ,.features p ,.feature-card p{
     color: rgb(114, 114, 114);
 }
 .quick-list {
@@ -100,6 +100,40 @@ font-weight: bold;
     color: rgb(255, 144, 14);
    
 }
+.features h3{
+          border-left: 5px solid rgb(255, 144, 14);
+          padding-left: 20px;
+}
+.features{
+    display: flex;
+    gap: 140px;
+}
+.feature-card{
+    padding: 30px;
+    box-shadow: 0 4px 38px 0 rgba(0,0, 0, 0.6);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.feature-card h4{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+ #experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+ }
+ .feature-architect img {
+    width: 100%;
+ }
 
 .some-facts h3{
     font-size: 2.8rem;
@@ -153,12 +187,19 @@ font-weight: bold;
     filter: grayscale(100%);
 }
 
-
+.footer{
+    width: 620px;
+    background-color: rgba(255, 144, 14 , 0.1);
+    font-size: 1.25rem;
+    padding: 30px 140px;
+  
+}
 
 @media screen and (max-width:576px) {
     .navber ,
     ul ,
-    .teams   {
+    .teams , 
+    .features   {
         flex-direction: column;
         text-align: center;
     }
@@ -171,6 +212,10 @@ font-weight: bold;
      {
         grid-template-columns: repeat(1, 1fr);
     }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
     .facts-items ,
     .sponsor-companies
     {
@@ -182,11 +227,12 @@ font-weight: bold;
         margin-left: 20px;
     }
 
-}
+} 
+
 
 /* medium size device */
 @media screen and (min-width:576px) and (max-width:992px) {
-    .teams {
+    .teams ,.features  {
         flex-direction: column;
     }
     .team-description{
@@ -197,6 +243,10 @@ font-weight: bold;
      {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
+    }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
     }
 
 }
